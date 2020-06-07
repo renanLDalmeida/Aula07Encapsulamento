@@ -6,7 +6,14 @@ namespace Encapsulamento
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Cartao card = new Cartao();
+            card.numero = "11515";
+            card.AprovarCompra();
+
+            Mastercard master = new Mastercard();
+            master.parcelas = 10;
+            master.ComprarComDescontoMastercard(20f);
+
         }
     }
 }
